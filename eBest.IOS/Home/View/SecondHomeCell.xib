@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SecondHomeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="249"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Second.png" translatesAutoresizingMaskIntoConstraints="NO" id="jK1-W2-8U9">
+                        <color key="backgroundColor" red="0.97534688150000004" green="1" blue="0.7386091856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥3648.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5NT-w4-VJX">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="GD3-gE-QxZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.38431372549019605" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天然那红紫玛瑙美女挂件玉美女如画吊坠玉石" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xxi-9Z-xgY">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="XyS-Fr-nuT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.27843137254901962" green="0.27843137254901962" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="jK1-W2-8U9" secondAttribute="bottom" constant="1" id="APt-ox-zJr"/>
+                    <constraint firstItem="5NT-w4-VJX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="120" id="AfL-pq-nbv"/>
+                    <constraint firstAttribute="trailing" secondItem="5NT-w4-VJX" secondAttribute="trailing" constant="120" id="I9m-TQ-3Ne"/>
+                    <constraint firstAttribute="trailing" secondItem="jK1-W2-8U9" secondAttribute="trailing" id="Pih-2n-9Uc"/>
+                    <constraint firstItem="xxi-9Z-xgY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="85" id="XsQ-nL-VJo"/>
+                    <constraint firstAttribute="bottom" secondItem="5NT-w4-VJX" secondAttribute="bottom" constant="15" id="bBg-MS-zQn"/>
+                    <constraint firstItem="jK1-W2-8U9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="fjD-0v-Css"/>
+                    <constraint firstItem="jK1-W2-8U9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="izC-kv-pl7"/>
+                    <constraint firstAttribute="trailing" secondItem="xxi-9Z-xgY" secondAttribute="trailing" constant="85" id="nSg-gW-Jne"/>
+                    <constraint firstItem="5NT-w4-VJX" firstAttribute="top" secondItem="xxi-9Z-xgY" secondAttribute="bottom" constant="5" id="t2G-vy-9ew"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="TitleLabelS" destination="xxi-9Z-xgY" id="2gJ-A7-016"/>
+                <outlet property="imageV" destination="jK1-W2-8U9" id="7hE-tv-Uda"/>
+                <outlet property="priceLabelS" destination="5NT-w4-VJX" id="PtU-WH-cRT"/>
+            </connections>
+            <point key="canvasLocation" x="273" y="194"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Second.png" width="1200" height="1200"/>
+    </resources>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RefuseViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jbs-gG-1ei">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你的订单62238351836估计的是个好飞机维" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WF2-D4-bpy">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="qvs-7H-CBA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="退款原因：我还打过卡的话对自己几点开快点发的规定收电费缴费环境更好吃" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pvm-Eu-ocR">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="pvm-Eu-ocR" secondAttribute="trailing" constant="8" id="5Jg-Vq-LY6"/>
+                        <constraint firstItem="pvm-Eu-ocR" firstAttribute="leading" secondItem="jbs-gG-1ei" secondAttribute="leading" constant="13" id="Blv-hv-NkR"/>
+                        <constraint firstItem="pvm-Eu-ocR" firstAttribute="top" secondItem="WF2-D4-bpy" secondAttribute="bottom" constant="8" id="Oxa-iq-u5b"/>
+                        <constraint firstAttribute="height" constant="80" id="WwQ-sH-UpO"/>
+                        <constraint firstAttribute="width" constant="375" id="cF6-PS-4ab"/>
+                        <constraint firstAttribute="trailing" secondItem="WF2-D4-bpy" secondAttribute="trailing" constant="13" id="px7-3z-jBp"/>
+                        <constraint firstItem="WF2-D4-bpy" firstAttribute="leading" secondItem="jbs-gG-1ei" secondAttribute="leading" constant="13" id="qYS-x3-KVV"/>
+                        <constraint firstItem="WF2-D4-bpy" firstAttribute="top" secondItem="jbs-gG-1ei" secondAttribute="top" constant="11" id="uYH-ip-904"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jbs-gG-1ei" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PzG-vK-tjX"/>
+                <constraint firstAttribute="trailing" secondItem="jbs-gG-1ei" secondAttribute="trailing" id="XVT-1h-Fm5"/>
+                <constraint firstItem="jbs-gG-1ei" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="oWx-ta-ch0"/>
+            </constraints>
+            <point key="canvasLocation" x="304.5" y="154.5"/>
+        </view>
+    </objects>
+</document>

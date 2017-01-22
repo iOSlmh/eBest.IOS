@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-04-04 12:03:18" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTg-DJ-Z23">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="Aer-fN-AN8"/>
+                            <constraint firstAttribute="height" constant="10" id="E9c-bh-aPY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每日登录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exI-Ju-gRY">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="Hgg-u3-7Kb"/>
+                            <constraint firstAttribute="height" constant="19" id="Naq-9e-2rx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.53767305612564087" green="0.53767305612564087" blue="0.53767305612564087" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lbu-ha-PQi">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Gid-A7-25G"/>
+                            <constraint firstAttribute="width" constant="100" id="njI-qx-8qE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="1" green="0.52004069850000001" blue="0.4950813738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="exI-Ju-gRY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="JRD-gy-U9L"/>
+                    <constraint firstAttribute="trailing" secondItem="lbu-ha-PQi" secondAttribute="trailing" constant="10" id="Wc4-ig-VxA"/>
+                    <constraint firstItem="lbu-ha-PQi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="Zfg-OS-s2q"/>
+                    <constraint firstItem="exI-Ju-gRY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="aoM-l4-DKT"/>
+                    <constraint firstItem="vTg-DJ-Z23" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="14" id="cod-9g-osv"/>
+                    <constraint firstItem="vTg-DJ-Z23" firstAttribute="top" secondItem="exI-Ju-gRY" secondAttribute="bottom" constant="8" id="jwO-vU-oOH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="logTime" destination="vTg-DJ-Z23" id="FnC-EB-urP"/>
+                <outlet property="scoreLb" destination="lbu-ha-PQi" id="Bws-gw-XSD"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

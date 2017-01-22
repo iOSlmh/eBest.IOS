@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MailLockViewController">
+            <connections>
+                <outlet property="mailTF" destination="8Qa-X6-g40" id="hg1-A9-b83"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eys-mh-7AG">
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="    请输入邮箱" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8Qa-X6-g40">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="LRX-Ck-wbb"/>
+                            </constraints>
+                            <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="8Qa-X6-g40" firstAttribute="leading" secondItem="eys-mh-7AG" secondAttribute="leading" constant="15" id="LBl-GW-wLV"/>
+                        <constraint firstAttribute="height" constant="48" id="V0R-gp-4nS"/>
+                        <constraint firstItem="8Qa-X6-g40" firstAttribute="top" secondItem="eys-mh-7AG" secondAttribute="top" constant="10" id="Y0g-ai-gFM"/>
+                        <constraint firstAttribute="trailing" secondItem="8Qa-X6-g40" secondAttribute="trailing" constant="15" id="tTp-8D-LZC"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CkQ-u2-mf1">
+                    <color key="backgroundColor" red="0.2240724" green="0.65749198720000002" blue="0.64017465730000001" alpha="0.93481272159999995" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="iRx-bb-0Cu"/>
+                    </constraints>
+                    <state key="normal" title="保存">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="saveBtn:" destination="-1" eventType="touchUpInside" id="WNT-mL-Dul"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="CkQ-u2-mf1" firstAttribute="top" secondItem="eys-mh-7AG" secondAttribute="bottom" constant="21" id="9Yp-Cu-yF9"/>
+                <constraint firstItem="eys-mh-7AG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HDy-TI-sNN"/>
+                <constraint firstAttribute="trailing" secondItem="eys-mh-7AG" secondAttribute="trailing" id="gOD-Q2-5ot"/>
+                <constraint firstItem="eys-mh-7AG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="qLX-WL-vZl"/>
+                <constraint firstItem="CkQ-u2-mf1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="vEg-xb-LUG"/>
+                <constraint firstAttribute="trailing" secondItem="CkQ-u2-mf1" secondAttribute="trailing" constant="15" id="wFw-kE-GQ4"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

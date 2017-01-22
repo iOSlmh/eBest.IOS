@@ -1,0 +1,169 @@
+//
+//  PrefixHeader.pch
+//  eBest.IOS
+//
+//  Created by 世纪博奥 on 16/3/4.
+//  Copyright © 2016年 shijiboao. All rights reserved.
+//
+
+#ifdef __OBJC__
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.2045436852  、、1007660450com.sina.weibo.SNWeiboSDKDemo wb2045436852
+
+/**
+ * window
+ */
+#define BaseView [[UIApplication sharedApplication].windows lastObject]
+/**
+ * 网络状态通知
+ */
+#define KLoadDataBase @"netStuta"
+/**
+ * 用户信息
+ */
+#define k_Key @"key"
+#define k_user @"userID"
+#define Login_state @"123"
+/**
+ * 默认地址
+ */
+#define k_Default_Adr_ID @"default"
+/**
+ * 三方登录用户信息
+ */
+#define k_NickName @"nickName"
+#define k_OpenID @"openID"
+#define K_Token @"wbToken"
+#define K_RefreshToken @"refreshToken"
+/**
+ * 判空字符串
+ */
+#define kIsEmptyString(s) (s == nil || [s isKindOfClass:[NSNull class]] || ([s isKindOfClass:[NSString class]] && s.length == 0))
+/**
+ * 判空数组
+ */
+#define kIsEmptyArray(a) (a != nil && ![a isKindOfClass:[NSNull class]] && a.count != 0)
+//QQ实例化存储名称
+#define k_qqNickName @"qqNickName"
+#define k_qqOpenID @"qqOpenID"
+#define K_qqToken @"qqToken"
+#define K_qqRefreshToken @"qqRefreshToken"
+
+//微博实例化存储名称
+#define k_wbNickName @"wbNickName"
+#define k_wbOpenID @"wbOpenID"
+#define K_wbToken @"wbToken"
+#define K_wbRefreshToken @"wbRefreshToken"
+
+//微信实例化存储名称
+#define k_wxNickName @"wxNickName"
+#define k_wxOpenID @"wxOpenID"
+#define K_wxToken @"wxToken"
+#define K_wxRefreshToken @"wxRefreshToken"
+
+//QQ登录
+#import <TencentOpenAPI/TencentOAuth.h>
+
+//新浪微博
+#import "WeiboSDK.h"
+#import "WeiboSDK+Statistics.h"
+#define kAppKey         @"1007660450"
+#define kRedirectURI    @"https://api.weibo.com/oauth2/default.html"
+
+//微信
+#import "WXApi.h"
+#define WX_BASE_URL @"https://api.weixin.qq.com/sns"
+#define WXPatient_App_ID @"wx46d95a358f1302a0"
+#define WXPatient_App_Secret @"676a2c159f1810be7e33ddf0c2397a89"
+
+//支付宝
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+//环信即时通讯
+#import "EMSDK.h"
+#import "EaseUI.h"
+
+// 三方及封装头文件
+#import "UMSocial.h"
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "FMDatabase.h"
+#import "MJRefresh.h"
+#import "FactoryUI.h"
+#import "RequestTools.h"
+#import "MBProgressHUD.h"
+#import "Masonry.h"
+#import "ASIHTTPRequest.h"
+#import "ASIFormDataRequest.h"
+#import "MyHUD.h"
+#import "JSONKit.h"
+#import "DCPicScrollView.h"
+#import "DCWebImageManager.h"
+#import "AlertShow.h"
+#import "Function.h"
+#import "MBProgressHUD+NJ.h"
+#import "GetImageSize.h"
+#import "ModelForMessageAndImage.h"
+#import "UIScrollView+EmptyDataSet.h"
+#import "LPLabel.h"
+#import "WSAuthCode.h"
+#import "UIView+CCPExtension.h"
+
+//内部调试
+//#define Base_Url @"http://192.168.1.189:8090/site/mobile"
+//#define Image_url @"http://192.168.1.189:8080/site"
+
+//#define Base_Url @"http://192.168.1.148:7000/site/mobile"
+//#define Image_url @"http://192.168.1.148:7000/site"
+
+//外网
+#define Base_Url @"http://www.jade-town.com/mobile"
+#define Image_url @"http://www.jade-town.com"
+
+//环信接口
+#define Base_hx @"http://kefu.easemob.com/ossimages"
+
+//根据像素计算对应的宽度，适合任意屏幕
+#define ActualW(w) [UIScreen mainScreen].bounds.size.width*w/750
+//根据像素计算对应的高度，适合任意屏幕
+#define ActualH(h) [UIScreen mainScreen].bounds.size.height*(h)/1334
+// 屏幕 宽高 比(设置字体大小用)
+#define RATE (SCREENW) / 750
+
+//宽高、颜色
+#define SW [UIScreen mainScreen].bounds.size.width
+#define SH [UIScreen mainScreen].bounds.size.height
+#define RGB(r,g,b,a) [UIColor colorWithRed:(r) / 255.0 green:(g) / 255.0 blue:(b) / 255.0 alpha:(a)]
+
+//头像加清理缓存
+#define HeadImageWithUrl(imageV,_urlStr) [imageV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",Image_url,_urlStr]] placeholderImage:[UIImage imageNamed:@"默认头像"]options:SDWebImageRefreshCached];
+
+//普通图片
+#define ImageWithUrl(imageV,_urlStr) [imageV sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@%@",Image_url,_urlStr]] placeholderImage:[UIImage imageNamed:@"newbarcode_default_itemImage"]];
+
+//人民币¥
+#define Money(money) [NSString stringWithFormat:@"¥%.2f",money]
+
+#define WIDTH_SCREEN [[UIScreen mainScreen] bounds].size.width
+
+#define HEIGHT_SCREEN [[UIScreen mainScreen] bounds].size.height
+
+#define BASE_WIDTH 375
+
+#define BASE_HEIGHT 667
+
+#define UNIT_WIDTH(NSInteger) (double)NSInteger / BASE_WIDTH  * WIDTH_SCREEN
+
+#define UNIT_HEIGHT(NSInteger) (double)NSInteger / BASE_HEIGHT * HEIGHT_SCREEN
+
+#define SYS_FONT(num) [UIFont systemFontOfSize:UNIT_HEIGHT(num)]
+
+
+
+#endif /* PrefixHeader_pch */
+#endif

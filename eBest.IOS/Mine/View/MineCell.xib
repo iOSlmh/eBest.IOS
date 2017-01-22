@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MineCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="48"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的商城" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zkW-an-s2z">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="62" id="RFA-fl-6Qd"/>
+                            <constraint firstAttribute="height" constant="19" id="YCd-CB-4jg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.25639680027961731" green="0.25639680027961731" blue="0.25639680027961731" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="订单" translatesAutoresizingMaskIntoConstraints="NO" id="oPq-1q-cwv">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="19" id="Dw1-rH-UCC"/>
+                            <constraint firstAttribute="width" constant="19" id="dFC-lE-k5D"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全部订单" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2I-cG-yFA">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="54" id="9B0-Lc-uHV"/>
+                            <constraint firstAttribute="height" constant="19" id="dpi-Om-5bW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.38784605264663696" green="0.38784605264663696" blue="0.38784605264663696" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oPq-1q-cwv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="B9r-KQ-sbl"/>
+                    <constraint firstItem="zkW-an-s2z" firstAttribute="leading" secondItem="oPq-1q-cwv" secondAttribute="trailing" constant="8" id="CFl-8X-Km4"/>
+                    <constraint firstItem="oPq-1q-cwv" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Hcw-Kj-v8m"/>
+                    <constraint firstItem="M2I-cG-yFA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="U7f-aq-dCR"/>
+                    <constraint firstItem="zkW-an-s2z" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WNE-5X-NVM"/>
+                    <constraint firstAttribute="trailing" secondItem="M2I-cG-yFA" secondAttribute="trailing" constant="19" id="aGz-1U-MMC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellImageV" destination="oPq-1q-cwv" id="gLk-aX-eSO"/>
+                <outlet property="messagelabel" destination="M2I-cG-yFA" id="6bw-wb-v8P"/>
+                <outlet property="titleLabel" destination="zkW-an-s2z" id="IYc-wU-uYr"/>
+            </connections>
+            <point key="canvasLocation" x="365" y="355"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="订单" width="19" height="19"/>
+    </resources>
+</document>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="187" height="187"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="187" height="187"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QxE-w6-1ov">
+                        <rect key="frame" x="0.0" y="0.0" width="187" height="187"/>
+                        <color key="backgroundColor" red="1" green="0.70266045759999995" blue="0.94951705149999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥5763.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5LH-6Y-laL">
+                        <rect key="frame" x="62" y="151" width="63" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="1" green="0.38431372549999998" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥5763.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r42-gc-ZDe">
+                        <rect key="frame" x="70" y="168" width="47" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.68627450980000004" green="0.68627450980000004" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="和田白玉和田白玉和田白玉" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IF2-Gv-Vgo">
+                        <rect key="frame" x="15" y="135" width="156" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.2784313725" green="0.2784313725" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="5LH-6Y-laL" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="2LF-Ip-iEi"/>
+                <constraint firstItem="IF2-Gv-Vgo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="135" id="Fn2-x9-738"/>
+                <constraint firstItem="5LH-6Y-laL" firstAttribute="top" secondItem="IF2-Gv-Vgo" secondAttribute="bottom" id="HfT-Vc-7fY"/>
+                <constraint firstItem="IF2-Gv-Vgo" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="IQA-UT-edd"/>
+                <constraint firstAttribute="bottom" secondItem="QxE-w6-1ov" secondAttribute="bottom" id="JWl-FC-uZS"/>
+                <constraint firstItem="5LH-6Y-laL" firstAttribute="top" secondItem="IF2-Gv-Vgo" secondAttribute="bottom" constant="2" id="Jey-hY-Ahn"/>
+                <constraint firstAttribute="trailing" secondItem="QxE-w6-1ov" secondAttribute="trailing" id="Nva-mD-knI"/>
+                <constraint firstItem="r42-gc-ZDe" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="PtM-pT-QPd"/>
+                <constraint firstItem="QxE-w6-1ov" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SJJ-RH-bNN"/>
+                <constraint firstItem="r42-gc-ZDe" firstAttribute="top" secondItem="5LH-6Y-laL" secondAttribute="bottom" constant="2" id="VIO-w1-sHP"/>
+                <constraint firstItem="QxE-w6-1ov" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kNs-kO-du4"/>
+                <constraint firstItem="r42-gc-ZDe" firstAttribute="top" secondItem="5LH-6Y-laL" secondAttribute="bottom" id="sSN-sy-gfw"/>
+            </constraints>
+            <size key="customSize" width="152" height="164"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Jey-hY-Ahn"/>
+                    <exclude reference="VIO-w1-sHP"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="priceTagLabel" destination="r42-gc-ZDe" id="ASC-y0-Fue"/>
+            </connections>
+            <point key="canvasLocation" x="356" y="362"/>
+        </collectionViewCell>
+    </objects>
+</document>
